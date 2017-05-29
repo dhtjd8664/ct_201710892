@@ -13,7 +13,7 @@ x3=0.0+w3
 print x1,x2,x3
 
 
-def triangle(size,at):
+def drawTriangleAt(size,at):
     t1.penup()
     t1.goto(at,0)
     t1.setheading(0)
@@ -26,7 +26,7 @@ def triangle(size,at):
     t1.fd(size)
 
 
-def pentagon(size,at):
+def drawPentagon(size,at):
     t1.penup()
     t1.goto(at,0)
     t1.setheading(0)
@@ -43,7 +43,7 @@ def pentagon(size,at):
     t1.fd(size)
     t1.rt(72)
 
-def star(size,at):
+def drawStarAt(size,at):
     t1.penup()
     t1.goto(at,0)
     t1.setheading(0)
@@ -61,6 +61,6 @@ def star(size,at):
     t1.rt(144)
     t1.fd(size)
 
-triangle(100,x1)
-pentagon(100,x2)
-star(100,x3)
+drawTriangleAt(100,x1)
+drawPentagon(100,x2)
+drawStarAt(100,x3)
